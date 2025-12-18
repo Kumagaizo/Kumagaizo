@@ -1,0 +1,45 @@
+MIT License with Custom Restrictions
+
+Copyright (c) 2024 Sandro Vogel / Intertwined Intelligence
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to view
+and study the Software for educational and reference purposes only, subject to
+the following conditions:
+
+PERMITTED USES:
+- View and study the source code for learning purposes
+- Reference the code in educational contexts
+- Link to the original repository
+
+PROHIBITED USES (Explicit Restrictions):
+- Commercial use of this software or derivative works
+- Redistribution of the software in source or compiled form
+- Creating derivative works or modified versions
+- Using this software to create competing products or services
+- Removing or modifying copyright notices or this license
+- Using the code in any production environment without written permission
+
+ATTRIBUTION REQUIREMENTS:
+Any permitted use must include prominent attribution:
+"Based on Kumagaizo by Sandro Vogel / Intertwined Intelligence
+(https://intertwinedintelligence.com)"
+
+DISCLAIMER:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+ENFORCEMENT:
+Unauthorized use will be pursued to the fullest extent of applicable law.
+
+For commercial licensing inquiries, contact: [your-email]
+
+---
+
+This license is binding and enforceable. By accessing this repository, you
+agree to these terms.
