@@ -151,14 +151,14 @@
     } else {
       container.classList.add('visible');
       
-      if (wordCount >= 100) {
+      if (wordCount >= 60) {
         progress = 100;
         level = 'professional';
-      } else if (wordCount >= 50) {
-        progress = 50 + ((wordCount - 50) / 50) * 50; // 50-100%
+      } else if (wordCount >= 40) {
+        progress = 50 + ((wordCount - 40) / 20) * 50; // 50-100%
         level = 'adequate';
       } else if (wordCount >= 20) {
-        progress = 25 + ((wordCount - 20) / 30) * 25; // 25-50%
+        progress = 25 + ((wordCount - 20) / 20) * 25; // 25-50%
         level = 'basic';
       } else {
         progress = (wordCount / 20) * 25; // 0-25%
