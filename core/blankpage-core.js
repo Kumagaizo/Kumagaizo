@@ -120,6 +120,7 @@
     
     const count = getWordCount(elements.stepTextarea.value);
     
+    // Update word count display
     if (elements.wordCount) {
       if (count === 0) {
         elements.wordCount.textContent = '';
@@ -129,6 +130,47 @@
         elements.wordCount.style.opacity = '0.4';
       }
     }
+    
+    // Update fidelity ring
+    updateFidelityRing(count);
+  }
+  
+  function updateFidelityRing(wordCount) {
+    const ring = document.getElementById('fidelity-ring-progress');
+    const container = document.querySelector('.fidelity-ring-container');
+    
+    if (!ring || !container) return;
+    
+    // Calculate progress (0-100)
+    let progress = 0;
+    let level = 'thin';
+    
+    if (wordCount === 0) {
+      progress = 0;
+      container.classList.remove('visible');
+    } else {
+      container.classList.add('visible');
+      
+      if (wordCount >= 100) {
+        progress = 100;
+        level = 'professional';
+      } else if (wordCount >= 50) {
+        progress = 50 + ((wordCount - 50) / 50) * 50; // 50-100%
+        level = 'adequate';
+      } else if (wordCount >= 20) {
+        progress = 25 + ((wordCount - 20) / 30) * 25; // 25-50%
+        level = 'basic';
+      } else {
+        progress = (wordCount / 20) * 25; // 0-25%
+        level = 'thin';
+      }
+    }
+    
+    // Update SVG circle
+    const circumference = 2 * Math.PI * 16; // r=16
+    const dashArray = (progress / 100) * circumference;
+    ring.style.strokeDasharray = `${dashArray} ${circumference}`;
+    ring.setAttribute('data-level', level);
   }
 
   // ─────────────────────────────────────────────────────────────────────────
